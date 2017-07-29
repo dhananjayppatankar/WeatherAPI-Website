@@ -1,0 +1,44 @@
+* {
+   box-sizing: border-box;
+ font-family: sans-serif;
+
+}
+
+html{
+
+background: linear-gradient(#007991, #78ffd6);
+min-height: 100vh;
+font-size: 20px;
+
+}
+
+
+.container > div{
+
+color: #fff;
+background-color: rgba(0, 0, 255, 0.2);
+border: 1px  #fff;
+padding: 20px;
+margin: 10px;
+text-align: center;
+
+}
+
+.button{
+
+  width: 100px;
+  height:30px;
+  background-color: #e67e22;
+  font-weight: 400;
+}
+input{
+
+width: 150px;
+height: auto;
+
+}
+/*.container > div:hover {
+
+background-color: rgba(0, 255, 0, 0.2);
+
+} */
