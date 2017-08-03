@@ -40,7 +40,7 @@ function showResults(data){
 }
 
 function activatePlaceSearch(){
-  var input =  $("#submitcity");
+  var input =  document.getElementById("submitcity");
   var autocomplete = new google.maps.places.Autocomplete(input);
 
 
