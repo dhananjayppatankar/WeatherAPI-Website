@@ -1,37 +1,43 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ajax And jQuery</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajax And jQuery</title>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js">  </script>
+  <script src="script.js">
+
+  </script>
   <link rel="stylesheet" href="default.css">
   <link rel="stylesheet" href="flex.css">
 
-  </head>
+</head>
 
- <body>
+<body background-image:url( "clouds.jfif")>
 
-    <div class= "container">
-    <div id= "header"><h1>Weather Report</h1>  </div>
-    <br>
-  <div>
-    <div id= "display">
-  <h3>Enter City</h3>
-  <input id= "submitcity" type="text" >
-  <!--<h3>Enter Country</h3>
-  <input id= "country" type="text"> -->
-  </div>
-  <br>
-  <div>
-  <button class= "button" type="button" id="getWeather">Get Weather</button>
+  <div class="container">
+    <div id="header">
+      <h1>Weather Report</h1>
     </div>
+    <br>
+    <div class="Diventerlocation">
+      <div id="display">
+        <!--<h3>Enter City</h3>  -->
+        <input id="submitcity" type="text">
+        <!--<h3>Enter Country</h3>
+  <input id= "country" type="text"> -->
       </div>
-  <div id= "showWeather">
+      <br>
+      <div>
+        <button class="button" type="button" id="getWeather">Get Weather</button>
+      </div>
+    </div>
+    <div id="showWeather">
 
-  </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ3fDn3iS23i8PfvyRHaAQhTFjvBVkc3I&libraries=places&callback=activatePlaceSearch"></script>
-  </body>
-  </html>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ3fDn3iS23i8PfvyRHaAQhTFjvBVkc3I&libraries=places&callback=activatePlaceSearch"></script>
+</body>
+
+</html>

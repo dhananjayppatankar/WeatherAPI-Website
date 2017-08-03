@@ -5,6 +5,8 @@ $(document).ready(function(){
       return getWeather();
 
     });
+   
+
 });
 
 function getWeather(){
@@ -20,8 +22,8 @@ function getWeather(){
         console.log(data);
         var results =  showResults(data)
         $("#showWeather").html(results);
-      }
-
+      } 
+      
     });
 
   }else {
@@ -33,7 +35,7 @@ function getWeather(){
 }
 
 function showResults(data){
-  return '<h3>Current Weather for '+data.name +', ' +data.sys.country + '</h3>'+
+  return '<h3>Weather in '+data.name +', ' +data.sys.country + '</h3>'+
           '<p> Weather : ' + data.weather[0].main  + '</p>' +
           '<p> Wind Speed : ' + data.wind.deg + '</p>' ;
 
@@ -45,3 +47,4 @@ function activatePlaceSearch(){
 
 
 }
+
