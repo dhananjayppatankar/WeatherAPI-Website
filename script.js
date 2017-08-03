@@ -4,7 +4,6 @@ $(document).ready(function(){
     $("button").click(function(){
       return getWeather();
 
-
     });
 });
 
@@ -35,6 +34,14 @@ function getWeather(){
 
 function showResults(data){
   return '<h3>Current Weather for '+data.name +', ' +data.sys.country + '</h3>'+
-          '<p> Weather : ' + data.weather[0].main + '</p>';
+          '<p> Weather : ' + data.weather[0].main  + '</p>' +
+          '<p> Wind Speed : ' + data.wind.deg + '</p>' ;
+
+}
+
+function activatePlaceSearch(){
+  var input =  $("#submitcity");
+  var autocomplete = new google.maps.places.Autocomplete(input);
+
 
 }
